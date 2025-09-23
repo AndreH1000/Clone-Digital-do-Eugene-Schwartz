@@ -334,7 +334,7 @@ function EnhancedNeuralNodes({ isProcessing = false }: { isProcessing?: boolean 
             Math.cos(angle) * radius,
             height,
             Math.sin(angle) * radius * 0.7
-          ],
+          ] as [number, number, number],
           color: ["#00D4FF", "#00FFFF", "#8B5CF6", "#EC4899"][layer],
           size: 0.03 + layer * 0.01,
           layer
