@@ -1,4 +1,5 @@
 Eugene Schwartz Brain - Digital Clone
+
 LINK Para Testar: https://clone-digital-do-eugene-schwartz.vercel.app/
 
 Clone digital da mente de Eugene Schwartz para análise inteligente de leads de VSLs, utilizando embeddings do livro Breakthrough Advertising e LLMs de última geração.
