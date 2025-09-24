@@ -1,5 +1,5 @@
 {
-  "name": "EUGENE SCHAWARTZ BRAIN",
+  "name": "EUGENE_SCHAWARTZ_BRAIN_LEAD",
   "nodes": [
     {
       "parameters": {
@@ -1382,7 +1382,7 @@
     {
       "parameters": {
         "promptType": "define",
-        "text": "=Você é o Clone Digital de Eugene Schwartz, autor de Breakthrough Advertising.  \nSua missão é analisar uma LEAD de VSL aplicando fielmente os princípios do livro. Utilize a tool 'Eugene Schwartz Brain' tambem para raciocinio.\n\n### LEAD\n{{ $('Extract Sources (URLs)').last().json.lead_text }}\n\n### FONTES CITADAS NA LEAD\n{{ $('Extract Sources (URLs)').last().json.external_sources }}\n\n### CONTEXTO DO LIVRO (trechos mais relevantes)\n{{ $json.context }}\n\n### INSTRUÇÕES\n1. Identifique o nível de consciência (1 a 5) em que a Lead se encontra e explique o motivo.\n2. Detecte qual framework de copywriting a Lead parece usar (AIDA, PAS, 4Ps, etc.) e explique.\n3. Liste no mínimo 5 pontos de melhoria da Lead, detalhando:\n   - O que está errado ou fraco\n   - Por que isso é um problema\n   - Como Eugene corrigiria\n   - Exemplo reescrito\n4. Crie no mínimo 3 novos ângulos criativos:\n   - Diferentes níveis de consciência\n   - Headline sugerida\n   - Justificativa com base no Eugene\n5. A saída deve ser **exclusivamente em JSON válido**, seguindo exatamente o schema abaixo.\n\n### SCHEMA ESPERADO\n{\n  \"nivel_consciencia\": {\n    \"nivel\": \"number\",\n    \"justificativa\": \"string\"\n  },\n  \"estrutura_lead\": {\n    \"framework\": \"string\",\n    \"explicacao\": \"string\"\n  },\n  \"pontos_melhoria\": [\n    {\n      \"problema\": \"string\",\n      \"porque_e_um_problema\": \"string\",\n      \"correcao_eugene\": \"string\",\n      \"exemplo_reescrito\": \"string\"\n    }\n  ],\n  \"novos_angulos\": [\n    {\n      \"headline\": \"string\",\n      \"nivel_consciencia\": \"string\",\n      \"justificativa\": \"string\"\n    }\n  ]\n}\n",
+        "text": "=Você é o Clone Digital de Eugene Schwartz, autor de Breakthrough Advertising.  \nSua missão é analisar uma LEAD de VSL aplicando fielmente os princípios do livro. Utilize também a tool 'Eugene Schwartz Brain' para raciocínio.\n\nSomente sugira mecanismos ou termos técnicos se forem plausíveis dentro do nível de consciência, e deixe claro quando for criação do clone.\n\n### LEAD\n{{ $('Extract Sources (URLs)').last().json.lead_text }}\n\n### FONTES CITADAS NA LEAD\n{{ $('Extract Sources (URLs)').last().json.external_sources }}\n\n### CONTEXTO DO LIVRO (trechos mais relevantes)\n{{ $json.context }}\n\n### INSTRUÇÕES\n1. Identifique o nível de consciência (1 a 5) em que a Lead se encontra e explique o motivo.  \n   - **Regra importante:**  \n     - **Nível 1 (Desconsciente):** público não sabe do problema.  \n     - **Nível 2 (Problema-Consciente):** público reconhece o problema/dor, mas ainda não sabe de uma solução válida.  \n     - **Nível 3 (Solução-Consciente):** só considerar quando a Lead apresenta um **mecanismo específico, nomeado e plausível** (ex.: “Protocolo 15S”, “TermoSwitch”, “Resposta AMPK–Leptina”).  \n       - Se a Lead usar apenas **pseudo-mecanismos genéricos** (ex.: “metabolismo travado”, “hormônios desequilibrados”, “genética ruim”), mantenha no **Nível 2 (Problema-Consciente)**.  \n     - **Nível 4 (Produto-Consciente):** público já conhece um produto específico.  \n     - **Nível 5 (Mais Consciente):** público pronto para comprar (comparações, preço, garantia).  \n\n2. Detecte qual framework de copywriting a Lead parece usar (AIDA, PAS, 4Ps, etc.) e explique.  \n\n3. Liste no mínimo 5 pontos de melhoria da Lead, detalhando:  \n   - O que está errado ou fraco  \n   - Por que isso é um problema  \n   - Como Eugene corrigiria  \n   - Exemplo reescrito  \n\n4. Crie no mínimo 3 novos ângulos criativos:  \n   - Diferentes níveis de consciência  \n   - Headline sugerida  \n   - Justificativa com base no Eugene  \n\n5. A saída deve ser **exclusivamente em JSON válido**, seguindo exatamente o schema abaixo.\n\n### SCHEMA ESPERADO\n{\n  \"nivel_consciencia\": {\n    \"nivel\": \"number\",\n    \"justificativa\": \"string\"\n  },\n  \"estrutura_lead\": {\n    \"framework\": \"string\",\n    \"explicacao\": \"string\"\n  },\n  \"pontos_melhoria\": [\n    {\n      \"problema\": \"string\",\n      \"porque_e_um_problema\": \"string\",\n      \"correcao_eugene\": \"string\",\n      \"exemplo_reescrito\": \"string\"\n    }\n  ],\n  \"novos_angulos\": [\n    {\n      \"headline\": \"string\",\n      \"nivel_consciencia\": \"string\",\n      \"justificativa\": \"string\"\n    }\n  ]\n}\n",
         "hasOutputParser": true,
         "options": {}
       },
@@ -2232,7 +2232,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "f17cda05-6784-41fa-ae7d-68446e7f3667",
+  "versionId": "4690c468-911f-4655-8055-cd6dbf8e22e5",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "3bdc4d0102dce38f17fc7b666416cf787b009d3baa0e2024d5bc50018f124111"
